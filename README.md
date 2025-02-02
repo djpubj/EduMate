@@ -21,3 +21,11 @@ This is an app similar to Google Classroom, named EduMate. It is connected to Fi
 ## Troubleshooting
 
 If you face issues, refer to the Firebase documentation or feel free to raise an issue on the repository.
+
+## Steps to find `app-release.apk`
+
+1. Download file.
+2. Open file.
+3. Open app folder.
+4. Then open release.
+5. Then you find `app-release.apk`
