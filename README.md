@@ -24,6 +24,7 @@ If you face issues, refer to the Firebase documentation or feel free to raise an
 
 ## Steps to find `app-release.apk`
 
+(Download and install apk in your android phone to check app)
 1. Download file.
 2. Open file.
 3. Then open app folder.
