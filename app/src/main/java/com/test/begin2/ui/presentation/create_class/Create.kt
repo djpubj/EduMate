@@ -80,7 +80,7 @@ fun Create(navController: NavController) {
                                     )
                                     viewModel.addClassroom(classroom)
                                     viewModel.fetchClassrooms()
-                                    navController.navigate("home")
+                                    navController.navigate(home)
                                     Toast.makeText(
                                         context,
                                         "Classroom ${classroom.className} created",
