@@ -30,3 +30,36 @@ If you face issues, refer to the Firebase documentation or feel free to raise an
 3. Then open app folder.
 4. Then open release folder.
 5. Then you find `app-release.apk`
+
+
+## Rules paste in your firebase realtime database rule segment
+```
+{
+  "rules": {
+    ".read": true, 
+    ".write": true,  
+    "Users": {
+      ".indexOn": ["useruid"],
+      ".read": "auth != null", // Allow authenticated users to read
+      ".write": "auth != null", // Allow authenticated users to write
+      "enrolledClasses":{
+           ".read": "auth != null", 
+           ".write": "auth != null" 
+      },
+      "createdClasses":{
+           ".read": "auth != null", 
+           ".write": "auth != null" 
+      }
+    },
+  "classrooms" : {
+     ".indexOn": ["classId"],
+    "classId":{
+           ".read": "auth != null", 
+           ".write": "auth != null" 
+    },
+     ".read": "auth != null", 
+     ".write": "auth != null" 
+    }
+  }
+}
+```
