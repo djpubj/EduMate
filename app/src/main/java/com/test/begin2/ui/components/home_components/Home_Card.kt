@@ -112,10 +112,10 @@ fun Home_Card(
             }
 
             // Extra Info
-            if (role == Role.TEACHER) {
+            if (role == Role.STUDENT) {
                 Text(text = classRoom.teachername, fontSize = 14.sp, color = Color.Gray)
             }
-            if (role == Role.STUDENT) {
+            if (role ==  Role.TEACHER) {
                 var size = classRoom.students.size
                 if (size == 1) {
                     Text(
